@@ -9,17 +9,19 @@ Source0:	https://code.osuosl.org/attachments/download/3285/%{name}-%{version}.ta
 URL:		https://code.osuosl.org/projects/ganeti-image
 BuildRequires:	rpmbuild(macros) >= 1.647
 Requires:	ganeti
-#sfdisk
-#kpartx
-#blkid
-#losetup
-#mke2fs
-#mkswap
-#mktemp
-#mount
-#sed
-#dump
-#tar
+Requires:	util-linux
+Requires:	kpartx
+Requires:	losetup
+Requires:	e2fsprogs
+Requires:	coreutils
+Requires:	mount
+Requires:	sed
+Requires:	dump
+Requires:	tar
+Requires:	blockdev
+Requires:	gawk
+Requires:	parted
+Requires:	/usr/bin/qemu-img
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
