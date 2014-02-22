@@ -6,6 +6,7 @@ License:	GPL v2
 Group:		Applications/System
 Source0:	https://code.osuosl.org/attachments/download/3285/%{name}-%{version}.tar.gz
 # Source0-md5:	6f1f50d23dd172921983c803a8286dc8
+Patch0:		kpartx-sync.patch
 URL:		https://code.osuosl.org/projects/ganeti-image
 BuildRequires:	rpmbuild(macros) >= 1.647
 Requires:	ganeti
@@ -33,6 +34,7 @@ such as debootstrap.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 %configure
