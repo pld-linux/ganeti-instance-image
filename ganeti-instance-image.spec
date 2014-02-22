@@ -23,6 +23,7 @@ Requires:	blockdev
 Requires:	gawk
 Requires:	parted
 Requires:	/usr/bin/qemu-img
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
