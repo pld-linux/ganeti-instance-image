@@ -1,7 +1,7 @@
 Summary:	System Image Guest OS definition for Ganeti
 Name:		ganeti-instance-image
 Version:	0.6
-Release:	1
+Release:	2
 License:	GPL v2
 Group:		Applications/System
 Source0:	https://code.osuosl.org/attachments/download/3285/%{name}-%{version}.tar.gz
