@@ -37,7 +37,13 @@ such as debootstrap.
 %patch0 -p1
 
 %build
-%configure
+%configure \
+	DUMP=/sbin/dump \
+	LOSETUP=/sbin/losetup \
+	KPARTX=/sbin/kpartx \
+	SFDISK=/sbin/sfdisk \
+	PARTED=/usr/sbin/parted \
+	QEMU_IMG=/usr/bin/qemu-img
 %{__make}
 
 %install
